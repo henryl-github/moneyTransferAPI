@@ -8,13 +8,13 @@
 # Concurrency
    * Locking/synchronization - Maximize concurrency by using database row level locking instead of table locking
    * Race condition - Use database row level locking(write lock) to ensure no race condition, see stress test 
-   * Deadlock - Lock rows in sequential order of accountId to ensure no deadlock, see stress test
+   * Deadlock - Lock rows in increasing order of accountId to ensure no deadlock, see stress test
    
 # Libraries used
    * H2 - in memory database to help ensure transaction(ACID) and datastore
-   * Jersey -  Created RESTful web service
+   * Jersey -  to create RESTful web service
    * Grizzly - HTTP server to host web service
-   * Junit - Unit test and Integration test
+   * Junit - for Unit test and Integration test
   
 # REST 
    API end point http://localhost:8090
